@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/predictionsTabs.js"></script>
+    <script defer src="js/searchCityPanel.js"></script>
+    <script defer src="js/themeSwitcher.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <main class="container light">
+        <section class="side-bar">
+            <div class="side-bar-btnsRow">
+                <button class="btn btn-searchCity">
+                    Поиск города
+                </button>
+                <button class="btn-switchTheme">
+                    <img id="btn-switchThemeIMG" src="images/SwitchThemeLight.svg" alt="switchThemeButtonPicture"/>
+                </button>
+            </div>
+            <img src="images/snowflake.svg" alt="precipitationImage"/>
+            <div class="side-bar-content">
+                    <p class="temperature">1</p>
+                    <p class="precipitation">Снег</p>
+                    <p class="feelsLike">Ощущается как -3 °C</p>
+                <div class="dateAndLocationInfo">
+                    <div class="dateInfo">
+                        <span class="today">Сегодня</span>
+                        <span class="date">Вс, 13 мар</span>
+                    </div>
+                    <figure class="locationInfo">
+                        <img src="images/locationPicture.svg" alt="locationImage"/>                     
+                        <figcaption class="nameOfTheLocality">Москва</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <div class="content-container">
+            <section class="content">
+                <section class="predictionBlock">
+                    <header class="predictionHeader">
+                        <h2 class="predictionTitle">Прогноз</h2>
+                        <nav class="predictionTabs">
+                            <button class="predictionTab predictionTabActive" data-time-duration="predictionWeekly">на&nbsp;неделю</button>
+                            <button class="predictionTab" data-time-duration="predictionHourly">почасовой</button>
+                        </nav>
+                    </header>
+                    <!-- <section class="slider"> -->
+                        <ul class="sliderCards">
+                            <button class="sliderBtn sliderBtnPrev sliderBtnUnavaible">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="white" class="sliderBtnIMG">
+                                    <circle cx="19" cy="19" r="19" transform="rotate(-180 19 19)"/>
+                                    <path d="M23 24.5L13.8735 18.8503C13.242 18.4593 13.242 17.5407 13.8735 17.1497L23 11.5" stroke="#ACACAC" stroke-width="3"/>
+                                </svg>
+                            </button>
+                            <!-- Сюда вставляются подгруженные карточки -->
+                            <button class="sliderBtn sliderBtnNext">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="white" class="sliderBtnIMG">
+                                    <circle cx="19" cy="19" r="19"/>
+                                    <path d="M15 13.5L24.1265 19.1497C24.758 19.5407 24.758 20.4593 24.1265 20.8503L15 26.5" stroke="#ACACAC" stroke-width="3"/>
+                                </svg>
+                            </button>
+                        </ul>
+                    <!-- </section> -->
+                </section>
+                <section class="todaysDetailsBlock">
+                    <h2 class="todaysDetailsTitle">Подробно на сегодня</h2>
+                    <div class="todaysDetailsCards">
+                        <section class="todaysDetailsCard">
+                            <h3 class="todaysDetailsCardsTitle">Скорость ветра</h3>
+                            <p class="todaysDetailsCardsTextBold">7 <span class="todaysDetailsCardsUnitsOfMeasure">м/с</span></p>
+                            <figure class="todaysDetailsCardsWind">
+                                <img src="images/wind.svg" alt="windImage"/>
+                                <figcaption class="todaysDetailsCardsWindDirection">СЗ</figcaption>
+                            </figure>
+                        </section>
+                        <section class="todaysDetailsCard">
+                            <h3 class="todaysDetailsCardsTitle">Влажность</h3>
+                            <p class="todaysDetailsCardsTextBold">84 <span class="todaysDetailsCardsUnitsOfMeasure">%</span></p>
+                        </section>
+                        <section class="todaysDetailsCard">
+                            <h3 class="todaysDetailsCardsTitle">Видимость</h3>
+                            <p class="todaysDetailsCardsTextBold">6.2 <span class="todaysDetailsCardsUnitsOfMeasure">км</span></p>
+                        </section>
+                        <section class="todaysDetailsCard">
+                            <h3 class="todaysDetailsCardsTitle">Давление</h3>
+                            <p class="todaysDetailsCardsTextBold">742 <span class="todaysDetailsCardsUnitsOfMeasure todaysDetailsCardsUnitsOfMeasureTextSmaller">мм рт. ст.</span></p>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

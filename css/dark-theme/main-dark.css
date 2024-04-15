@@ -1,0 +1,53 @@
+:root {
+    --background-dark: #100E1C;
+    --panel-dark: #212331;
+}
+
+.dark * {
+    transition: background-color 0.5s;
+}
+
+.dark .btn {
+    background: var(--panel-dark, #212331);
+    color: var(--light-gray, #E6E6E6);
+}
+
+.dark .content-container {
+    background: var(--background-dark, #100E1C);
+}
+
+.dark .predictionTitle {
+    color: #E6E6E6;
+}
+
+.dark .predictionTab {
+    color: #6D6D6D;
+}
+
+.dark .predictionTab:hover {
+    color: #E6E6E6;
+}
+
+.dark .predictionTabActive {
+    color: #E6E6E6;
+}
+
+.dark .todaysDetailsTitle {
+    color: var(--light-gray, #E6E6E6);
+}
+
+.dark .todaysDetailsCard {
+    background: var(--panel-dark, #212331);
+}
+
+.dark .todaysDetailsCardsTitle {
+    color: var(--light-gray, #E6E6E6);
+}
+
+.dark .todaysDetailsCardsTextBold {
+    color: var(--light-gray, #E6E6E6);
+}
+
+.dark .todaysDetailsCardsWindDirection {
+    color: var(--light-gray, #E6E6E6);
+}

@@ -1,0 +1,17 @@
+.dark .searchCityPanel {
+    background: var(--panel-dark, #212331);
+}
+
+.dark .btn-closeSearchCityPanel {
+    background: var(--panel-dark, #212331);
+}
+
+.dark .btn-closeSearchCityPanelIMG {
+    fill: var(--light-gray, #E6E6E6);
+}
+
+.dark .textFieldSearchCityPanel {
+    background-image: url(../../images/searchCityPanel/Vector.svg);
+    background-position: 5%;
+    background-repeat: no-repeat;
+}

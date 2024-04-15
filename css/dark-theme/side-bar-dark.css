@@ -1,0 +1,16 @@
+.dark .side-bar {
+    background: var(--panel-dark, #212331);
+    background-image: url(../../images/Cloud-background1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: difference;
+    background-size: contain;
+}
+
+.dark .temperature {
+    color: var(--light-gray, #E6E6E6);
+}
+
+.dark .precipitation {
+    color: var(--light-gray, #E6E6E6);
+}

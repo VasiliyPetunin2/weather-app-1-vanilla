@@ -1,0 +1,79 @@
+.searchCityPanel {
+    width: 32vw;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: var(--panel-light, #FFF);
+    padding: 46px 46px 0px 46px;
+    position: absolute;
+    left: -32vw;
+    z-index: 1;
+}
+
+body .searchCityPanel {
+    transition: left 0.5s;
+}
+
+body .openSearchCityPanel {
+    left: 0;
+}
+
+.btn-closeSearchCityPanel {
+    border: none;
+    background: var(--panel-light, #FFF);
+    align-self: flex-end;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.btn-closeSearchCityPanel:hover {
+    opacity: 0.5;
+}
+
+.form-searchCityPanel {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    column-gap: 22px;
+    margin-top: 46px;
+}
+
+.textFieldSearchCityPanel {
+    max-width: 60%;
+    text-align: left;
+    background-image: url(../images/searchCityPanel/Vector.svg);
+    background-position: 5%;
+    background-repeat: no-repeat;
+    padding-left: 44px;
+}
+
+@media (max-width: 1439px) {
+    .form-searchCityPanel {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .textFieldSearchCityPanel {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+    .searchCityPanel {
+        width: 39.5vw;
+        left: -39.5vw;
+        padding: 59px 27px;
+    }
+}
+
+@media (max-width: 833px) {
+    .searchCityPanel {
+        width: 100%;
+        min-height: 705.5px;
+        left: -100%;
+        padding: 40px 50px 40px 27px;
+    }
+}

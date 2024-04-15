@@ -1,0 +1,147 @@
+.side-bar {
+    width: 32vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 35px;
+    background: var(--panel-light, #FFF);
+    background-image: url(../images/Cloud-background1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: difference;
+    background-size: contain;
+}
+
+.side-bar-btnsRow {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-switchTheme {
+    border: none;
+    background: none;
+    border-radius: 50%;
+    transition: box-shadow 0.5s;
+}
+
+.btn-switchTheme:hover {
+    box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.05);
+}
+
+.side-bar-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.temperature {
+    color: var(--gray, #48484A);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 2px 0px 2px 0px;
+}
+
+.temperature::after {
+    content: "°C";
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.precipitation {
+    color: var(--gray, #48484A);
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 17px 0px 17px 0px;
+}
+
+.feelsLike {
+    color: var(--hint, #ACACAC);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dateAndLocationInfo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 78px
+}
+
+.dateInfo {
+    display: flex;
+}
+
+.today {
+    color: var(--hint, #ACACAC);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 44px;
+}
+
+.date {
+    color: var(--hint, #ACACAC);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 44px;
+}
+
+.locationInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.nameOfTheLocality {
+    color: var(--hint, #ACACAC);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 5px 0px 5px;
+}
+
+@media (max-width: 1439px) {
+    .btn-searchCity {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+    .side-bar {
+        width: 39.5vw;
+        padding-top: 53px;
+        background-position-y: 30%;
+    }
+}
+
+@media (max-width: 833px) {
+    .side-bar {
+        width: 100%;
+    }
+}
