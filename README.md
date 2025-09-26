@@ -11,3 +11,6 @@
 1.2 `git@github.com:VasiliyPetunin2/weather-app-1-vanilla.git`  
 1.3 `gh repo clone VasiliyPetunin2/weather-app-1-vanilla`
 2. Открываем **index.html** файл прямо в браузере
+
+## Ознакомление с демо
+Посмотреть демо можно вот [тут](https://weather-app-1-vanilla.vercel.app/)
